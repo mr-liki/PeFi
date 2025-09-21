@@ -1,0 +1,163 @@
+/* Main card */
+.add-transaction-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin: 20px;
+  width: 90%;
+}
+
+/* Split form + table */
+.add-transaction-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* right part double */
+  gap: 30px;
+}
+
+/* Left form section */
+.form-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.form-section h3 {
+  margin-bottom: 15px;
+  color: #22333B;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #22333B;
+}
+
+/* Inputs + Select same width */
+.form-section input,
+.form-section select {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-section button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #0984e3;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-section button:hover {
+  background: #0767b1;
+}
+
+/* Right table section */
+.table-section {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.table-section h3 {
+  margin-bottom: 15px;
+  color: #22333B;
+}
+
+/* Scrollable transactions with fixed header */
+.table-container {
+  max-height: 600px;   /* ✅ approx 10 rows */
+  overflow-y: auto;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th,
+.table-section td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+/* ✅ Sticky header */
+.table-section th {
+  background: black;
+  color: white;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.income-row td {
+  color: #00b894;
+}
+
+.expense-row td {
+  color: #d63031;
+}
+
+/* Filter section inside left form */
+.filter-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.filter-section h3 {
+  margin-bottom: 12px;
+  color: #22333B;
+}
+
+.filter-section label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.filter-section input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.filter-section .formbutton {
+  display: flex;
+}
+
+.filter-section button {
+  margin-top: 12px;
+  padding: 8px;
+  width: 48%;
+  border: none;
+  border-radius: 6px;
+  background: #0984e3;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-section .clear-btn {
+  margin-left: 10px;
+  background: #d63031;
+}
+
+.filter-section .clear-btn:hover {
+  background: #b02323;
+}
