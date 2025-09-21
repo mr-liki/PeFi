@@ -20,7 +20,7 @@ export default function App() {
           <nav className="navbar">
             <div className="nav-logo"> PeFi</div>
             <ul className="nav-links">
-              <li><Link to="/PeFi/">Dashboard</Link></li>
+              <li><Link to="/">Dashboard</Link></li>
               <li><Link to="/add">Add Transaction</Link></li>
               <li><Link to="/categories">Categories</Link></li> 
               <li><Link to="/savings">Savings</Link></li>
@@ -30,7 +30,7 @@ export default function App() {
           {/* Page Content */}
           <main className="main-content">
             <Routes>
-              <Route path="/PeFi/" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/add" element={<AddTransaction />} />
               <Route path="/categories" element={<Categories />} />
               <Route path="/savings" element={<Savings />} />
